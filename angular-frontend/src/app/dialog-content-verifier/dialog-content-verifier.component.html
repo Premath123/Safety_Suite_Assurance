@@ -1,0 +1,44 @@
+<span style="color:black;font-weight:bold;font-style: normal;font-family: Verdana, Geneva, Tahoma, sans-serif;font-size: 20px;">
+    &nbsp;&nbsp;Travel Department has accepted your request and sent below Invitation
+  </span>
+  <div>
+  <div class="col-md-12">
+      <table border="1">
+         <thead>
+          <tr>
+          <th scope="col">Connection ID</th>
+          <th scope="col">Created At</th>
+          <th scope="col">Invitation Key</th>
+          <th scope="col">DID</th>
+          <th scope="col">Request ID</th>
+          <th scope="col">State</th>
+          <th scope="col">Updated At</th>
+          &nbsp;
+          </tr>
+         </thead>
+      <tbody>
+  
+    <tr>
+     <td>{{details1.connection_id}}</td>
+     <td>{{details1.created_at}}</td>  
+     <td>{{details1.invitation_key}}</td>
+     <td>{{details1.my_did}}</td>
+     <td>{{details1.request_id}}</td>
+     <td>{{details1.state}}</td> 
+     <td>{{details1.updated_at}}</td>               
+    </tr>
+    </tbody>
+    </table>
+    </div>
+  <mat-dialog-actions align="end">
+  <div class="example-button-row" layout-align="center">
+      <button mat-flat-button color="primary" routerLink="/present" [mat-dialog-close]="true" cdkFocusInitial >Accept Invitation</button>
+  </div>
+  
+  
+  </mat-dialog-actions>
+  
+  
+  
+  
+  

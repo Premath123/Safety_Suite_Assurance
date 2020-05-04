@@ -1,0 +1,27 @@
+pipeline{
+  agent none
+  stages{
+      stage('git checkout'){
+        agent {label 'slave'}
+        steps{
+          sh label: '', script: 'echo "inside git checkout stage"'
+             git credentialsId: '02136e62-05bc-4272-8136-ab985c85e751', url: 'https://github.dxc.com/dtc-blockchain/OCIO'
+         }
+       }
+      
+      stage('OCIO_UI'){
+         agent {label 'slave'}
+      steps {
+             sh 'whoami'
+             sh 'pwd'
+             sh 'cd OCIO_UI; sudo node -v; pwd; sudo npm install -g @angular/cli; sudo npm audit fix; ng serve --port 4200 --host ec2-54-81-211-61.compute-1.amazonaws.com &'
+            //  sh 'pwd'
+            //  sh 'node -v'
+            //  sh 'pwd'
+            //  sh 'whoami'
+             //ng serve --port 4200 --host ec2-54-81-211-61.compute-1.amazonaws.com
+            //  sh 'sudo npm start'
+      }
+       } 
+  }
+}
