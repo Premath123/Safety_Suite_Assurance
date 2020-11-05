@@ -10,5 +10,11 @@ pipeline {
         bat 'npm install'
       }
     }
+	  stage('Run') {
+      steps {
+        git 'https://github.com/Premath123/Safety_Suite_Assurance.git'
+        bat 'npm serve'
+      }
+    }
   }
 }
