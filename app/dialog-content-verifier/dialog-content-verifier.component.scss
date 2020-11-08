@@ -1,0 +1,50 @@
+table{
+    width: 100%;
+    font-size: small;
+    border-collapse:collapse ;
+}
+
+th{
+    background-color: black;
+    color: white;
+    text-align: left; padding: 10px 20px;
+    
+}
+td{
+    text-align: left;
+    background-color: lightgrey;
+    border-color: black;
+    padding: 10px 20px;
+   
+}
+
+.full-width-table {
+    width: 150%;}
+.data-table {
+    margin-top: 2rem;
+    box-shadow:none;
+}
+       
+        
+            td {
+                border: none;
+                border-collapse:collapse}
+                img {
+                    width: 25px;
+                }
+            
+.card_section{
+    background-color: white;
+}
+.status{
+    width: 12px;
+}
+.action{
+    background-color: white;
+    border : white;
+}
+.mat-flat-button {
+    margin-top: 150px;
+    background-color: yellow;
+    color: black;
+}
